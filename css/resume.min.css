@@ -31,17 +31,10 @@ h2 {
   font-family: "Saira Extra Condensed", serif;
   font-size: 1.35rem;
 }
-.list-social-icons a {
-  color: #495057;
-}
-.list-social-icons a:hover {
-  color: #f4d162;
-}
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
+
 .list-icons {
-  font-size: 3rem;
+  font-size: 5rem;
+  max-width: 650px;
 }
 .list-icons .list-inline-item i:hover {
   color: #f3a026;
@@ -159,4 +152,8 @@ a:hover {
 .main-desc {
   max-width: 450px;
   color: white;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
 }
