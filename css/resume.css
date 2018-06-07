@@ -3,35 +3,28 @@ body {
   padding-top: 54px;
   color: #868e96;
 }
-
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 11rem;
   }
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Saira Extra Condensed", serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
   color: #343a40;
 }
-
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
 }
-
 h2 {
   font-size: 3.5rem;
 }
-
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -39,31 +32,18 @@ h2 {
   font-size: 1.35rem;
 }
 
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: #bd5d38;
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
-
 .list-icons {
-  font-size: 3rem;
+  font-size: 5rem;
+  max-width: 650px;
+  color: #f3a026;
 }
-
 .list-icons .list-inline-item i:hover {
-  color: #bd5d38;
+  color: #f4d162;
 }
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -72,13 +52,13 @@ h2 {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 11rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
-    padding: 0.5rem;
+    padding: 0rem;
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
@@ -103,17 +83,25 @@ h2 {
     display: block;
   }
 }
-
+#about {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url(../img/bg-comp.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
 }
-
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
-
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -122,28 +110,80 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
-
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
-
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background: rgb(244, 209, 98);
+  background: linear-gradient(
+    332deg,
+    rgba(244, 209, 98, 1) 10%,
+    rgba(243, 160, 38, 1) 85%
+  );
 }
-
 .text-primary {
-  color: #bd5d38 !important;
+  color: #f3a026 !important;
 }
-
 a {
-  color: #bd5d38;
+  color: #f4d162;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #f3a026;
+  text-decoration: none;
 }
 
-a:hover,
-a:focus,
-a:active {
-  color: #824027;
+.name-text {
+  color: white;
+  font-family: "Poiret One", cursive;
+  font-size: 4.8em;
+}
+
+.main-desc {
+  max-width: 450px;
+  color: white;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.btn {
+  background-color: #f3a026;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #f4d162;
+}
+
+.contact-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 24%,
+    rgb(245, 245, 245) 94%
+  );
+}
+
+#skills {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url(../img/bg-skills.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#experience {
+  background-color: #212529;
+}
+#education {
+  background-color: #f8f9fa;
 }

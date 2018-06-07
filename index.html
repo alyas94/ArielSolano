@@ -20,12 +20,15 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Poiret+One|Source+Sans+Pro" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
 
 </head>
 
@@ -67,10 +70,17 @@
               <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
             </span>
           </a>
-          <a href="https://github.com/alyas94">
+          <a target="_blank" href="https://github.com/alyas94">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+
+            </span>
+          </a>
+          <a target="_blank" href="img/ArielSolano.pdf">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-file fa-stack-1x fa-inverse"></i>
 
             </span>
           </a>
@@ -198,20 +208,14 @@
           </li>
         </ul>
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+        <div class="subheading mb-3">Other Tools i use</div>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item">
+            <i class="devicons devicons-photoshop"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-illustrator"></i>
+          </li>
         </ul>
       </div>
     </section>
@@ -246,43 +250,54 @@
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column contact-section" id="contact">
       <div class="my-auto">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1
-            <sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1
-            <sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2
-            <sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1
-              <sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3
-              <sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
+        <h2 class="mb-5">Connect with me!</h2>
+        <!-- contact form -->
+        <div id="contact-area">
+          <!-- 
+          <form method="post" action="contactengine.php">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" />
+
+            <label for="City">City:</label>
+            <input type="text" name="City" id="City" />
+
+            <label for="Email">Email:</label>
+            <input type="text" name="Email" id="Email" />
+
+            <label for="Message">Message:</label>
+            <br />
+            <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+            <input type="submit" name="submit" value="Submit" class="submit-button" />
+          </form>
+
+          <div style="clear: both;"></div> -->
+
+
+
+          <form method="post" action="php/contactengine.php">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="Name" name="Name" placeholder="Jon Doe" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Email">Email</label>
+                <input type="text" class="form-control" id="Email" placeholder="JonDoe@email.com" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Subject</label>
+              <textarea name="Message" class="form-control" id="Message" rows="5"></textarea>
+            </div>
+            <button type="submit" name="submit" value="Submit" class="btn btn-primary submit-button">Send
+              <i class="far fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
