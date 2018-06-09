@@ -162,12 +162,21 @@ p {
 }
 
 .contact-section {
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 24%,
     rgb(245, 245, 245) 94%
-  );
+  ); */
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url(../img/bg-connect.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #skills {
@@ -276,4 +285,18 @@ p {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+li {
+  list-style-type: none;
+}
+
+.connect {
+  margin-left: 2em;
+  color: white;
+}
+.contacttext {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  font-family: "Saira Extra Condensed", serif;
 }
